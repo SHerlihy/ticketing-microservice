@@ -16,8 +16,8 @@ jobs:
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
-      - run: cd payments && docker build -t tutorials-for-sh/payments .
-      - run: docker push tutorials-for-sh/payments
+      - run: cd payments && docker build -t sherlihy/payments .
+      - run: docker push sherlihy/payments
       - uses: digitalocean/action-doctl@v2
         with:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}

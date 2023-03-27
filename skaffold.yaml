@@ -9,7 +9,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: tutorials-for-sh/auth
+    - image: sherlihy/auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -17,7 +17,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: tutorials-for-sh/ticketing-client
+    - image: sherlihy/client
       context: client
       docker:
         dockerfile: Dockerfile
@@ -25,7 +25,7 @@ build:
         manual:
           - src: '**/*.js'
             dest: .
-    - image: tutorials-for-sh/tickets
+    - image: sherlihy/tickets
       context: tickets
       docker:
         dockerfile: Dockerfile
@@ -33,7 +33,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: tutorials-for-sh/orders
+    - image: sherlihy/orders
       context: orders
       docker:
         dockerfile: Dockerfile
@@ -41,7 +41,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: tutorials-for-sh/expiration
+    - image: sherlihy/expiration
       context: expiration
       docker:
         dockerfile: Dockerfile
@@ -49,7 +49,7 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: tutorials-for-sh/payments
+    - image: sherlihy/payments
       context: payments
       docker:
         dockerfile: Dockerfile
