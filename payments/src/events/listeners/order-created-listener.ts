@@ -1,5 +1,5 @@
 import { Message } from "node-nats-streaming";
-import { Listener, OrderCreatedEvent, Subjects } from "tutorials-for-sh/common";
+import { Listener, OrderCreatedEvent, Subjects } from "@tutorials-for-sh/common/build";
 import { queueGroupName } from "./queue-group-name";
 import { Order } from "../../models/order";
 

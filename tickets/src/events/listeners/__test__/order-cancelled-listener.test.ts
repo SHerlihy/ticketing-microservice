@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { Message } from "node-nats-streaming";
-import { OrderCancelledEvent } from "tutorials-for-sh/common";
+import { OrderCancelledEvent } from "@tutorials-for-sh/common/build";
 import { natsWrapper } from "../../../nats-wrapper";
 import { OrderCancelledListener } from "../order-cancelled-listener";
 import { Ticket } from "../../../models/ticket";

@@ -3,7 +3,7 @@ import {
   requireAuth,
   NotFoundError,
   NotAuthorizedError,
-} from "tutorials-for-sh/common/build";
+} from "@tutorials-for-sh/common/build";
 import { Order } from "../models/order";
 
 const router = express.Router();

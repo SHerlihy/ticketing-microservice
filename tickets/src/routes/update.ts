@@ -6,7 +6,7 @@ import {
   requireAuth,
   NotAuthorizedError,
   BadRequestError,
-} from "tutorials-for-sh/common";
+} from "@tutorials-for-sh/common/build";
 import { Ticket } from "../models/ticket";
 import { TicketUpdatedPublisher } from "../events/publishers/ticket-updated-publisher";
 import { natsWrapper } from "../nats-wrapper";

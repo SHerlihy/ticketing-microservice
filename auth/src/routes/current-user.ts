@@ -1,5 +1,5 @@
 import express from "express";
-import { currentUser } from "tutorials-for-sh/common/build";
+import { currentUser } from "@tutorials-for-sh/common/build";
 
 const router = express.Router();
 

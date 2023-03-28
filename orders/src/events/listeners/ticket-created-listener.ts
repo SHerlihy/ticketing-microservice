@@ -1,5 +1,5 @@
 import { Message } from "node-nats-streaming";
-import { Subjects, Listener, TicketCreatedEvent } from "tutorials-for-sh/common/build";
+import { Subjects, Listener, TicketCreatedEvent } from "@tutorials-for-sh/common/build";
 import { Ticket } from "../../models/ticket";
 import { queueGroupName } from "./queue-group-name";
 

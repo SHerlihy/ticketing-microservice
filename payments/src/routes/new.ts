@@ -7,7 +7,7 @@ import {
   NotAuthorizedError,
   NotFoundError,
   OrderStatus,
-} from "tutorials-for-sh/common";
+} from "@tutorials-for-sh/common/build";
 import { stripe } from "../stripe";
 import { Order } from "../models/order";
 import { Payment } from "../models/payment";

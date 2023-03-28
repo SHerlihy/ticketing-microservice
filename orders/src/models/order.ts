@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { updateIfCurrentPlugin } from "mongoose-update-if-current";
-import { OrderStatus } from "tutorials-for-sh/common/build";
+import { OrderStatus } from "@tutorials-for-sh/common/build";
 import { TicketDoc } from "./ticket";
 
 export { OrderStatus };

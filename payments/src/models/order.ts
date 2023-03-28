@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { updateIfCurrentPlugin } from "mongoose-update-if-current";
-import { OrderStatus } from "tutorials-for-sh/common";
+import { OrderStatus } from "@tutorials-for-sh/common/build";
 
 interface OrderAttrs {
   id: string;
