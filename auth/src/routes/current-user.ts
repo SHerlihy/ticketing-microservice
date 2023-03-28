@@ -1,5 +1,5 @@
 import express from "express";
-import { currentUser } from "@cygnetops/common-v2";
+import { currentUser } from "tutorials-for-sh/common";
 
 const router = express.Router();
 

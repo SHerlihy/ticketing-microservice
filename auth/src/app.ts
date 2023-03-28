@@ -2,7 +2,7 @@ import express from "express";
 import "express-async-errors";
 import { json } from "body-parser";
 import cookieSession from "cookie-session";
-import { errorHandler, NotFoundError } from "@cygnetops/common-v2";
+import { errorHandler, NotFoundError } from "tutorials-for-sh/common";
 
 import { currentUserRouter } from "./routes/current-user";
 import { signinRouter } from "./routes/signin";

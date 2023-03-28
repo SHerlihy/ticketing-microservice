@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import { Message } from "node-nats-streaming";
-import { OrderStatus, ExpirationCompleteEvent } from "@cygnetops/common-v2";
+import { OrderStatus, ExpirationCompleteEvent } from "tutorials-for-sh/common/build";
 import { ExpirationCompleteListener } from "../expiration-complete-listener";
 import { natsWrapper } from "../../../nats-wrapper";
 import { Order } from "../../../models/order";
