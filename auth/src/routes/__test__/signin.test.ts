@@ -1,7 +1,7 @@
 import request from 'supertest';
 import { app } from '../../app';
 
-xdescribe('signin route',()=>{
+describe('signin route',()=>{
 it('fails when a email that does not exist is supplied', async () => {
   await request(app)
     .post('/api/users/signin')

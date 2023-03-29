@@ -1,7 +1,7 @@
 import request from 'supertest';
 import { app } from '../../app';
 
-xdescribe('signup route',()=>{
+describe('signup route',()=>{
 it('returns a 201 on successful signup', async () => {
   return request(app)
     .post('/api/users/signup')
