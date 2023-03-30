@@ -44,7 +44,7 @@ const start = async () => {
   }
 
   app.listen(3000, () => {
-    console.log("tickets service listening on 3000");
+    console.log("tickets service listening on 3000!");
   });
 };
 
