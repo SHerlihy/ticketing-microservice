@@ -1,6 +1,7 @@
 import request from 'supertest';
 import { app } from '../../app';
 
+describe('current user route',()=>{
 it('responds with details about the current user', async () => {
   const cookie = await global.signin();
 
@@ -21,3 +22,4 @@ it('responds with null if not authenticated', async () => {
 
   expect(response.body.currentUser).toEqual(null);
 });
+})

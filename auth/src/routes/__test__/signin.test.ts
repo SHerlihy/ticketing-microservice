@@ -1,6 +1,7 @@
 import request from 'supertest';
 import { app } from '../../app';
 
+describe('signin route',()=>{
 it('fails when a email that does not exist is supplied', async () => {
   await request(app)
     .post('/api/users/signin')
@@ -48,3 +49,4 @@ it('responds with a cookie when given valid credentials', async () => {
 
   expect(response.get('Set-Cookie')).toBeDefined();
 });
+})
