@@ -5,7 +5,7 @@ const buildClient = ({ req }) => {
     // We are on the server
 
     return axios.create({
-      baseURL: "http://www.YOUR_DOMAIN_NAME",
+        baseURL: "http://www.microservice-app-ticketing-prod.xyz",
       headers: req.headers,
     });
   } else {
