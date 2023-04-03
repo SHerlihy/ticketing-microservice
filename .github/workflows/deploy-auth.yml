@@ -22,11 +22,5 @@ jobs:
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-      - uses: azure/CLI@v1
-        with:
-          azcliversion: 2.30.0
-          inlineScript: |
-            chmod +x $GITHUB_WORKSPACE/AZCLIScript.sh
-            $GITHUB_WORKSPACE/AZCLIScript.sh
-      - run: doctl kubernetes cluster kubeconfig save ticketing
+      - run: az aks get-credentials --resource-group microservicesResourceGroup --name myAKSCluster
       - run: kubectl rollout restart deployment auth-depl
