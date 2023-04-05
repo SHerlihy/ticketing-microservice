@@ -12,9 +12,21 @@ spec:
       labels:
         app: auth-mongo
     spec:
+      nodeSelector:
+        "kubernetes.io/os": linux
       containers:
         - name: auth-mongo
           image: mongo
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 250m
+              memory: 256Mi
+          ports:
+            - containerPort: 27017
+              name: auth-mongo
 ---
 apiVersion: v1
 kind: Service
